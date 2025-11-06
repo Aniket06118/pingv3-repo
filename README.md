@@ -4,7 +4,7 @@
 
 1. Fork this repository
 2. Install Python
-3. Run `pip install ping-game-theory-25`
+3. Run `pip install ping-game-theory`
 4. Rename the file in submissions/ with your name and net id
 5. Open the Python file in your text editor
 6. Enter your SNU NetID in `self.author_netid`
@@ -17,9 +17,9 @@ Do NOT change the name of the `class Bot`. If you do this, your submission will 
 
 ## Where do I write my code?
 
-The `begin` function is what defines what move your bot plays first. For now it just plays ROCK to start with.
+The `begin` function is what defines what move your bot plays first. For now it just plays `Move.COOPERATE` to start with.
 
-The `turn` function is what defines what move your bot performs in any turns after. `History` is a list of `HistoryEntry`s, inside which `HistoryEntry.self` is the move your bot played for that turn and `HistoryEntry.other` is the move the opponent played. For now the bot only plays ROCK.
+The `turn` function is what defines what move your bot performs in any turns after. `History` is a list of `HistoryEntry`s, inside which `HistoryEntry.self` is the move your bot played for that turn and `HistoryEntry.other` is the move the opponent played. For now the bot only plays `Move.DEFECT`.
 
 ## How do I test my code?
 
